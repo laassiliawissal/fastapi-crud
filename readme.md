@@ -436,7 +436,7 @@ async def create_item(item: Item):
 
 ```
 
-### STEPS TO DEPLOY FASTAPI TO AZURE APP SERVICE.
+# STEPS TO DEPLOY FASTAPI TO AZURE APP SERVICE.
 #### in Azure 
 - CERATE resource group
 - CREATE an app server service
