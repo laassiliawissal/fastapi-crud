@@ -442,8 +442,13 @@ async def create_item(item: Item):
 - CREATE an app server service
 - INSTALL Azure CLI
 
-#### In az cli:
+#### from CLI:
 - az webapp config set --name fastapi-crud --resource-group Start_Azure --startup-file "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main_v1:app"
 - zip -r myfastapiapp.zip .
 - az webapp deploy --resource-group Start_Azure --name fastapi-crud --src-path myfastapiapp.zip
-- 
+
+#### from console:
+
+( https://www.youtube.com/watch?v=Jt8iqgaz1Po )
+
+
