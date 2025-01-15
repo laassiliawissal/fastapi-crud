@@ -435,3 +435,15 @@ async def create_item(item: Item):
 
 
 ```
+
+### STEPS TO DEPLOY FASTAPI TO AZURE APP SERVICE.
+#### in Azure 
+- CERATE resource group
+- CREATE an app server service
+- INSTALL Azure CLI
+
+#### In az cli:
+- az webapp config set --name fastapi-crud --resource-group Start_Azure --startup-file "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main_v1:app"
+- zip -r myfastapiapp.zip .
+- az webapp deploy --resource-group Start_Azure --name fastapi-crud --src-path myfastapiapp.zip
+- 
